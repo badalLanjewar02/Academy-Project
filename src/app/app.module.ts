@@ -21,6 +21,7 @@ import { SportFacilitiesComponent } from './Infrastructure/sport-facilities/spor
 import { SeniouWingComponent } from './Admissions/admissions/seniou-wing/seniou-wing.component';
 import { TCRequestComponent } from './Admissions/tc-request/tc-request.component';
 import { HomeInfoComponent } from './Home/home-info/home-info.component';
+import { FooterComponent } from './Home/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { HomeInfoComponent } from './Home/home-info/home-info.component';
     SportFacilitiesComponent,
     SeniouWingComponent,
     TCRequestComponent,
-    HomeInfoComponent
+    HomeInfoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

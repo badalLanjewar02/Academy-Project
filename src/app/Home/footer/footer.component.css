@@ -1,0 +1,14 @@
+.footer-heading{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+.footer-heading-primary {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.font-bold {
+    font-weight: 700;
+}
+.footer-primary-heading-color{
+        color: #fbbf24;
+}

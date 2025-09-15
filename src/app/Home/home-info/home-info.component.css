@@ -1,0 +1,11 @@
+.w-200{
+    width: 200px;
+    height: 220px;
+}
+ .carousel,
+    .carousel-item,
+    .carousel-item img {
+      height: 93vh;
+     
+      object-fit: cover;
+    }
