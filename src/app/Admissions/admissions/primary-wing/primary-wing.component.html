@@ -1,1 +1,77 @@
-<p>primary-wing works!</p>
+
+<div class="container">
+    <div class="container mt-5">
+        <h2>Student Details Form</h2>
+        <form>
+            <!-- Student Name Section -->
+            <div class="row">
+                <div class="mb-3 col-4">
+                    <label for="firstName" class="form-label">Student First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter First Name" required>
+                </div>
+                <div class="mb-3 col-4">
+                    <label for="middleName" class="form-label">Student Middle Name</label>
+                    <input type="text" class="form-control" id="middleName" placeholder="Enter Middle Name">
+                </div>
+                <div class="mb-3 col-4">
+                    <label for="lastName" class="form-label">Student Last Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name" required>
+                </div>
+            </div>
+            <!-- Admission Class Section -->
+            <div class="row">
+                <div class="mb-3 col-6">
+                    <label for="classSelect" class="form-label">Select Class</label>
+                    <select class="form-select" id="classSelect" required>
+                        <option value="">Choose Class</option>
+                        <option value="1">Class 1</option>
+                        <option value="2">Class 2</option>
+                        <option value="3">Class 3</option>
+                        <option value="4">Class 4</option>
+                        <option value="5">Class 5</option>
+                        <option value="6">Class 6</option>
+                        <option value="7">Class 7</option>
+                        <option value="8">Class 8</option>
+                        <option value="9">Class 9</option>
+                        <option value="10">Class 10</option>
+                    </select>
+                </div>
+
+                <!-- Student Aadhar Section -->
+                <div class="mb-3 col-6">
+                    <label for="aadharNumber" class="form-label">Student Aadhar Number</label>
+                    <input type="text" class="form-control" id="aadharNumber" placeholder="Enter Aadhar Number"
+                        required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-6 ">
+                    <label for="aadharDocument" class="form-label">Student Aadhar Document</label>
+                    <input type="file" class="form-control" id="aadharDocument" accept=".pdf,.jpg,.jpeg,.png" required>
+                    <div class="form-text">No file chosen</div>
+                </div>
+
+                <!-- Student Birth Certificate Section -->
+                <div class="mb-3 col-6 ">
+                    <label for="birthCertificate" class="form-label">Student Birth Certificate</label>
+                    <input type="file" class="form-control" id="birthCertificate" accept=".pdf,.jpg,.jpeg,.png"
+                        required>
+                    <div class="form-text">No file chosen</div>
+                </div>
+            </div>
+            <!-- Student Passport Photo Section -->
+            <div class="row">
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="passportPhoto" class="form-label">Student Passport Photo</label>
+                        <input type="file" class="form-control" id="passportPhoto" accept=".jpg,.jpeg,.png" required>
+                        <div class="form-text">No file chosen</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>

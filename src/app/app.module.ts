@@ -22,6 +22,7 @@ import { SeniouWingComponent } from './Admissions/admissions/seniou-wing/seniou-
 import { TCRequestComponent } from './Admissions/tc-request/tc-request.component';
 import { HomeInfoComponent } from './Home/home-info/home-info.component';
 import { FooterComponent } from './Home/footer/footer.component';
+import { GalleryComponent } from './Gallery/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { FooterComponent } from './Home/footer/footer.component';
     SeniouWingComponent,
     TCRequestComponent,
     HomeInfoComponent,
-    FooterComponent
+    FooterComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
