@@ -9,27 +9,39 @@ import { FounderMessageComponent } from './The-Academy/founder-message/founder-m
 import { ChairpersonMessagesComponent } from './The-Academy/chairperson-messages/chairperson-messages.component';
 import { PrincipalMessageComponent } from './The-Academy/principal-message/principal-message.component';
 import { AccreditationComponent } from './The-Academy/accreditation/accreditation.component';
+import { HolisticDevelopmentComponent } from './Academics/holistic-development/holistic-development.component';
+import { TechnologyIntegrationComponent } from './Academics/technology-integration/technology-integration.component';
+import { GuidanceCouncellingComponent } from './Academics/guidance-councelling/guidance-councelling.component';
 
 
 const routes: Routes = [
 
- { path: 'PrimaryWing', component: PrimaryWingComponent },
+  { path: 'PrimaryWing', component: PrimaryWingComponent },
   {
     path: '', component: HomeInfoComponent
   },
   {
-    path:'Gallery',component:GalleryComponent
+    path: 'Gallery', component: GalleryComponent
   },
 
-   {
+  {
     path: 'TheAcademy',
     children: [
       { path: 'AboutRMCP', component: AboutRMCPComponent },
       { path: 'MissionStatement', component: MissionStatementComponent },
+      { path: 'FounderMessage', component: FounderMessageComponent },
       { path: 'ChairpersonMessages', component: ChairpersonMessagesComponent },
-       { path: 'PrincipalMessage', component: PrincipalMessageComponent },
-        { path: 'Accreditation', component: AccreditationComponent },
-        
+      { path: 'PrincipalMessage', component: PrincipalMessageComponent },
+      { path: 'Accreditation', component: AccreditationComponent },
+
+    ]
+  },
+  {
+    path: 'Academics',
+    children: [
+      { path: 'HolisticDevelopment', component: HolisticDevelopmentComponent },
+      { path: 'TechnologyIntegration', component: TechnologyIntegrationComponent },
+      { path: 'GuidanceCouncelling', component: GuidanceCouncellingComponent },
     ]
   },
 ];
