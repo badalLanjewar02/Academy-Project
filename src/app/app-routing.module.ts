@@ -12,6 +12,9 @@ import { AccreditationComponent } from './The-Academy/accreditation/accreditatio
 import { HolisticDevelopmentComponent } from './Academics/holistic-development/holistic-development.component';
 import { TechnologyIntegrationComponent } from './Academics/technology-integration/technology-integration.component';
 import { GuidanceCouncellingComponent } from './Academics/guidance-councelling/guidance-councelling.component';
+import { FormsModule } from '@angular/forms';
+import { EMagazineComponent } from './Press-Coverage/e-magazine/e-magazine.component';
+import { PressCoveragesComponent } from './Press-Coverage/press-coverages/press-coverages.component';
 
 
 const routes: Routes = [
@@ -44,10 +47,18 @@ const routes: Routes = [
       { path: 'GuidanceCouncelling', component: GuidanceCouncellingComponent },
     ]
   },
+
+   {
+    path: 'PressCoverage',
+    children: [
+      { path: 'PressCoverages', component: PressCoveragesComponent },
+      { path: 'EMagazine', component: EMagazineComponent },
+    ]
+  },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes),FormsModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

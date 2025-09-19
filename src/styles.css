@@ -7,7 +7,8 @@
     font-weight: 700;
 }
 .text-blue{
-    color: rgb(29 78 216);
+    /* color: rgb(29 78 216); */
+    color: rgb(56 189 248 / var(--tw-text-opacity, 1));
 }
 .para-size{
     font-size: 1.125rem;
@@ -15,4 +16,8 @@
 }
 .nav-link-color{
     color: #e0f2fe;
+}
+
+.font-sm{
+    font-size: 14px;
 }

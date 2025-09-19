@@ -23,6 +23,9 @@ import { TCRequestComponent } from './Admissions/tc-request/tc-request.component
 import { HomeInfoComponent } from './Home/home-info/home-info.component';
 import { FooterComponent } from './Home/footer/footer.component';
 import { GalleryComponent } from './Gallery/gallery/gallery.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PressCoveragesComponent } from './Press-Coverage/press-coverages/press-coverages.component';
+import { EMagazineComponent } from './Press-Coverage/e-magazine/e-magazine.component';
 
 @NgModule({
   declarations: [
@@ -46,11 +49,14 @@ import { GalleryComponent } from './Gallery/gallery/gallery.component';
     TCRequestComponent,
     HomeInfoComponent,
     FooterComponent,
-    GalleryComponent
+    GalleryComponent,
+    PressCoveragesComponent,
+    EMagazineComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

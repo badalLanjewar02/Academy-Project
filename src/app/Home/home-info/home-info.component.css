@@ -1,11 +1,21 @@
-.w-200{
-    width: 200px;
-    height: 220px;
+.w-200 {
+  width: 200px;
+  height: 220px;
 }
- .carousel,
-    .carousel-item,
-    .carousel-item img {
-      height: 93vh;
-     
-      object-fit: cover;
-    }
+
+.carousel,
+.carousel-item,
+.carousel-item img {
+  height: 93vh;
+
+  object-fit: cover;
+}
+.bg-blue {
+  background-color: #0656a3;
+}
+.f-20{
+      font-size: 20px;
+}
+.mb-100{
+       margin-bottom: 100px;
+}
