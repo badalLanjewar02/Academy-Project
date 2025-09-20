@@ -23,6 +23,7 @@ import { TCRequestComponent } from './Admissions/tc-request/tc-request.component
 import { HomeInfoComponent } from './Home/home-info/home-info.component';
 import { FooterComponent } from './Home/footer/footer.component';
 import { GalleryComponent } from './Gallery/gallery/gallery.component';
+import { PressCoverageComponent } from './Pess Coverage/press-coverage/press-coverage.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { GalleryComponent } from './Gallery/gallery/gallery.component';
     TCRequestComponent,
     HomeInfoComponent,
     FooterComponent,
-    GalleryComponent
+    GalleryComponent,
+    PressCoverageComponent
   ],
   imports: [
     BrowserModule,
