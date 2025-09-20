@@ -12,6 +12,7 @@ import { AccreditationComponent } from './The-Academy/accreditation/accreditatio
 import { HolisticDevelopmentComponent } from './Academics/holistic-development/holistic-development.component';
 import { TechnologyIntegrationComponent } from './Academics/technology-integration/technology-integration.component';
 import { GuidanceCouncellingComponent } from './Academics/guidance-councelling/guidance-councelling.component';
+import { PressCoverageComponent } from './Pess Coverage/press-coverage/press-coverage.component';
 
 
 const routes: Routes = [
@@ -33,7 +34,6 @@ const routes: Routes = [
       { path: 'ChairpersonMessages', component: ChairpersonMessagesComponent },
       { path: 'PrincipalMessage', component: PrincipalMessageComponent },
       { path: 'Accreditation', component: AccreditationComponent },
-
     ]
   },
   {
@@ -44,6 +44,16 @@ const routes: Routes = [
       { path: 'GuidanceCouncelling', component: GuidanceCouncellingComponent },
     ]
   },
+ 
+  {
+    path: 'PressCoverage',
+    children: [
+      { path: 'PressCoverage', component: PressCoverageComponent },
+      { path: 'TechnologyIntegration', component: TechnologyIntegrationComponent },
+      { path: 'GuidanceCouncelling', component: GuidanceCouncellingComponent },
+    ]
+  },
+
 ];
 
 @NgModule({
