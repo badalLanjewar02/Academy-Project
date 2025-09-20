@@ -16,3 +16,11 @@
 .nav-link-color{
     color: #e0f2fe;
 }
+.heading-secondory{
+    color: #4b5563;
+}
+p ,h1 ,h2,h3,h4,h5,h6{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
