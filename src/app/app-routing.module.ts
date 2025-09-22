@@ -13,6 +13,7 @@ import { HolisticDevelopmentComponent } from './Academics/holistic-development/h
 import { TechnologyIntegrationComponent } from './Academics/technology-integration/technology-integration.component';
 import { GuidanceCouncellingComponent } from './Academics/guidance-councelling/guidance-councelling.component';
 import { PressCoverageComponent } from './Pess Coverage/press-coverage/press-coverage.component';
+import { EMagazineComponent } from './Pess Coverage/e-magazine/e-magazine.component';
 
 
 const routes: Routes = [
@@ -49,7 +50,7 @@ const routes: Routes = [
     path: 'PressCoverage',
     children: [
       { path: 'PressCoverage', component: PressCoverageComponent },
-      { path: 'TechnologyIntegration', component: TechnologyIntegrationComponent },
+      { path: 'EMagazine', component: EMagazineComponent },
       { path: 'GuidanceCouncelling', component: GuidanceCouncellingComponent },
     ]
   },

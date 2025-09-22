@@ -24,6 +24,7 @@ import { HomeInfoComponent } from './Home/home-info/home-info.component';
 import { FooterComponent } from './Home/footer/footer.component';
 import { GalleryComponent } from './Gallery/gallery/gallery.component';
 import { PressCoverageComponent } from './Pess Coverage/press-coverage/press-coverage.component';
+import { EMagazineComponent } from './Pess Coverage/e-magazine/e-magazine.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { PressCoverageComponent } from './Pess Coverage/press-coverage/press-cov
     HomeInfoComponent,
     FooterComponent,
     GalleryComponent,
-    PressCoverageComponent
+    PressCoverageComponent,
+    EMagazineComponent
   ],
   imports: [
     BrowserModule,
