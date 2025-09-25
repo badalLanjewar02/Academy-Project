@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './Home/navigation/navigation.component';
@@ -18,13 +18,14 @@ import { TechnologyIntegrationComponent } from './Academics/technology-integrati
 import { GuidanceCouncellingComponent } from './Academics/guidance-councelling/guidance-councelling.component';
 import { AuditoriumComponent } from './Infrastructure/auditorium/auditorium.component';
 import { SportFacilitiesComponent } from './Infrastructure/sport-facilities/sport-facilities.component';
-import { SeniouWingComponent } from './Admissions/admissions/seniou-wing/seniou-wing.component';
+
 import { TCRequestComponent } from './Admissions/tc-request/tc-request.component';
 import { HomeInfoComponent } from './Home/home-info/home-info.component';
 import { FooterComponent } from './Home/footer/footer.component';
 import { GalleryComponent } from './Gallery/gallery/gallery.component';
 import { PressCoverageComponent } from './Pess Coverage/press-coverage/press-coverage.component';
 import { EMagazineComponent } from './Pess Coverage/e-magazine/e-magazine.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,7 @@ import { EMagazineComponent } from './Pess Coverage/e-magazine/e-magazine.compon
     GuidanceCouncellingComponent,
     AuditoriumComponent,
     SportFacilitiesComponent,
-    SeniouWingComponent,
+  
     TCRequestComponent,
     HomeInfoComponent,
     FooterComponent,
@@ -54,7 +55,10 @@ import { EMagazineComponent } from './Pess Coverage/e-magazine/e-magazine.compon
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule ,
+     HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
