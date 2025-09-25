@@ -14,6 +14,8 @@ import { TechnologyIntegrationComponent } from './Academics/technology-integrati
 import { GuidanceCouncellingComponent } from './Academics/guidance-councelling/guidance-councelling.component';
 import { PressCoverageComponent } from './Pess Coverage/press-coverage/press-coverage.component';
 import { EMagazineComponent } from './Pess Coverage/e-magazine/e-magazine.component';
+import { AuditoriumComponent } from './Infrastructure/auditorium/auditorium.component';
+import { MiddleWingComponent } from './Admissions/middle-wing/middle-wing.component';
 
 
 const routes: Routes = [
@@ -45,16 +47,17 @@ const routes: Routes = [
       { path: 'GuidanceCouncelling', component: GuidanceCouncellingComponent },
     ]
   },
- 
+
   {
     path: 'PressCoverage',
     children: [
       { path: 'PressCoverage', component: PressCoverageComponent },
-      { path: 'EMagazine', component: EMagazineComponent },
+      { path: 'EMagazine', component: AuditoriumComponent },
+      //  { path: 'EMagazine', component: EMagazineComponent },
       { path: 'GuidanceCouncelling', component: GuidanceCouncellingComponent },
     ]
   },
-
+ 
 ];
 
 @NgModule({
