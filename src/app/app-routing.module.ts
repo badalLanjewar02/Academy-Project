@@ -54,7 +54,8 @@ const routes: Routes = [
     path: 'PressCoverage',
     children: [
       { path: 'PressCoverage', component: PressCoverageComponent },
-      { path: 'EMagazine', component: AuditoriumComponent },
+      // { path: 'EMagazine', component: AuditoriumComponent },
+       { path: 'EMagazine', component: EMagazineComponent}
     ]
   },
 
@@ -62,7 +63,7 @@ const routes: Routes = [
     path: 'Infrastructure',
     children: [
       { path: 'PressCoverage', component: PressCoverageComponent },
-      { path: 'EMagazine', component: AuditoriumComponent },
+     
     ]
   },
 
