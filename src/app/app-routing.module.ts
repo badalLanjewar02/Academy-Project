@@ -18,6 +18,7 @@ import { AuditoriumComponent } from './Infrastructure/auditorium/auditorium.comp
 import { MiddleWingComponent } from './Admissions/middle-wing/middle-wing.component';
 import { VacanciesComponent } from './vacancies/vacancies.component';
 import { TCRequestComponent } from './Admissions/tc-request/tc-request.component';
+import { SportFacilitiesComponent } from './Infrastructure/sport-facilities/sport-facilities.component';
 
 
 const routes: Routes = [
@@ -62,7 +63,7 @@ const routes: Routes = [
   {
     path: 'Infrastructure',
     children: [
-      { path: 'PressCoverage', component: PressCoverageComponent },
+      { path: 'SportFacilities', component: SportFacilitiesComponent },
      
     ]
   },
