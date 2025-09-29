@@ -22,13 +22,10 @@ import { SportFacilitiesComponent } from './Infrastructure/sport-facilities/spor
 
 
 const routes: Routes = [
-  {
-    path: '', component: HomeInfoComponent
-  },
+  { path: '', redirectTo: '/Home', pathMatch: 'full' },
+  { path: 'Home', component: HomeInfoComponent },
 
-  {
-    path: 'Gallery', component: GalleryComponent
-  },
+  { path: 'Gallery', component: GalleryComponent },
 
   {
     path: 'TheAcademy',
@@ -55,8 +52,7 @@ const routes: Routes = [
     path: 'PressCoverage',
     children: [
       { path: 'PressCoverage', component: PressCoverageComponent },
-      // { path: 'EMagazine', component: AuditoriumComponent },
-       { path: 'EMagazine', component: EMagazineComponent}
+      { path: 'EMagazine', component: EMagazineComponent } // ✅ Fixed
     ]
   },
 
@@ -64,24 +60,24 @@ const routes: Routes = [
     path: 'Infrastructure',
     children: [
       { path: 'SportFacilities', component: SportFacilitiesComponent },
-     
     ]
   },
 
   {
     path: 'admissions',
     children: [
-      { path: 'PressCoverage', component: PressCoverageComponent },
       { path: 'TCRequest', component: TCRequestComponent },
       { path: 'MiddleWing', component: MiddleWingComponent },
     ]
   },
-  
   {
-    path: 'Vacancies', component: VacanciesComponent
-  }
+    path: 'Auditorium', component: AuditoriumComponent
+  },
+  { path: 'Vacancies', component: VacanciesComponent },
 
+  { path: '**', redirectTo: '/Home' } // ✅ Fixed
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
