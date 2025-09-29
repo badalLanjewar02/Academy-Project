@@ -26,6 +26,7 @@ import { GalleryComponent } from './Gallery/gallery/gallery.component';
 import { PressCoverageComponent } from './Pess Coverage/press-coverage/press-coverage.component';
 import { EMagazineComponent } from './Pess Coverage/e-magazine/e-magazine.component';
 import { HttpClientModule } from '@angular/common/http';
+import { VacanciesComponent } from './vacancies/vacancies.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     GalleryComponent,
     PressCoverageComponent,
-    EMagazineComponent
+    EMagazineComponent,
+    VacanciesComponent
   ],
   imports: [
     BrowserModule,

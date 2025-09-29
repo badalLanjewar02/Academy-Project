@@ -16,6 +16,7 @@ import { PressCoverageComponent } from './Pess Coverage/press-coverage/press-cov
 import { EMagazineComponent } from './Pess Coverage/e-magazine/e-magazine.component';
 import { AuditoriumComponent } from './Infrastructure/auditorium/auditorium.component';
 import { MiddleWingComponent } from './Admissions/middle-wing/middle-wing.component';
+import { VacanciesComponent } from './vacancies/vacancies.component';
 
 
 const routes: Routes = [
@@ -61,6 +62,9 @@ const routes: Routes = [
       { path: 'PressCoverage', component: PressCoverageComponent },
       { path: 'EMagazine', component: AuditoriumComponent },
     ]
+  },
+  {
+    path: 'Vacancies',component: VacanciesComponent
   }
  
 ];
