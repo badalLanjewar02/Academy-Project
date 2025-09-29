@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeInfoComponent } from './Home/home-info/home-info.component';
 import { GalleryComponent } from './Gallery/gallery/gallery.component';
-import { PrimaryWingComponent } from './Admissions/admissions/primary-wing/primary-wing.component';
+
 import { AboutRMCPComponent } from './The-Academy/about-rmcp/about-rmcp.component';
 import { MissionStatementComponent } from './The-Academy/mission-statement/mission-statement.component';
 import { FounderMessageComponent } from './The-Academy/founder-message/founder-message.component';
@@ -17,14 +17,14 @@ import { EMagazineComponent } from './Pess Coverage/e-magazine/e-magazine.compon
 import { AuditoriumComponent } from './Infrastructure/auditorium/auditorium.component';
 import { MiddleWingComponent } from './Admissions/middle-wing/middle-wing.component';
 import { VacanciesComponent } from './vacancies/vacancies.component';
+import { TCRequestComponent } from './Admissions/tc-request/tc-request.component';
 
 
 const routes: Routes = [
-
-  { path: 'PrimaryWing', component: PrimaryWingComponent },
   {
     path: '', component: HomeInfoComponent
   },
+
   {
     path: 'Gallery', component: GalleryComponent
   },
@@ -40,6 +40,7 @@ const routes: Routes = [
       { path: 'Accreditation', component: AccreditationComponent },
     ]
   },
+
   {
     path: 'Academics',
     children: [
@@ -56,17 +57,28 @@ const routes: Routes = [
       { path: 'EMagazine', component: AuditoriumComponent },
     ]
   },
-   {
+
+  {
     path: 'Infrastructure',
     children: [
       { path: 'PressCoverage', component: PressCoverageComponent },
       { path: 'EMagazine', component: AuditoriumComponent },
     ]
   },
+
   {
-    path: 'Vacancies',component: VacanciesComponent
+    path: 'admissions',
+    children: [
+      { path: 'PressCoverage', component: PressCoverageComponent },
+      { path: 'TCRequest', component: TCRequestComponent },
+      { path: 'MiddleWing', component: MiddleWingComponent },
+    ]
+  },
+  
+  {
+    path: 'Vacancies', component: VacanciesComponent
   }
- 
+
 ];
 
 @NgModule({

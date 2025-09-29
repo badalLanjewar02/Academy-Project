@@ -46,7 +46,6 @@ import { VacanciesComponent } from './vacancies/vacancies.component';
     GuidanceCouncellingComponent,
     AuditoriumComponent,
     SportFacilitiesComponent,
-  
     TCRequestComponent,
     HomeInfoComponent,
     FooterComponent,
