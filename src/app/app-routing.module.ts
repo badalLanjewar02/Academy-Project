@@ -53,10 +53,15 @@ const routes: Routes = [
     children: [
       { path: 'PressCoverage', component: PressCoverageComponent },
       { path: 'EMagazine', component: AuditoriumComponent },
-      //  { path: 'EMagazine', component: EMagazineComponent },
-      { path: 'GuidanceCouncelling', component: GuidanceCouncellingComponent },
     ]
   },
+   {
+    path: 'Infrastructure',
+    children: [
+      { path: 'PressCoverage', component: PressCoverageComponent },
+      { path: 'EMagazine', component: AuditoriumComponent },
+    ]
+  }
  
 ];
 
