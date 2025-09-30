@@ -24,3 +24,18 @@ p ,h1 ,h2,h3,h4,h5,h6{
     margin: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/*  */
+.bg{
+    background-color:#f0f9ff;
+}
+.border-color{
+
+    border-color: #7dd3fa;
+}
+.text-orange-800{
+    color: #9a3412;
+}
+.text-orange-700{
+    color: #c2410c;
+}
