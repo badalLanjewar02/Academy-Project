@@ -25,8 +25,6 @@ const routes: Routes = [
   { path: '', redirectTo: '/Home', pathMatch: 'full' },
   { path: 'Home', component: HomeInfoComponent },
 
-  { path: 'Gallery', component: GalleryComponent },
-
   {
     path: 'TheAcademy',
     children: [
@@ -74,6 +72,8 @@ const routes: Routes = [
     path: 'Auditorium', component: AuditoriumComponent
   },
   { path: 'Vacancies', component: VacanciesComponent },
+    
+  { path: 'Gallery', component: GalleryComponent },
 
   { path: '**', redirectTo: '/Home' } // ✅ Fixed
 ];
