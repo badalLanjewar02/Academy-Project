@@ -43,9 +43,9 @@
               <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
                 aria-expanded="false">Methodology</a>
               <ul class="dropdown-menu">
-                <li><a href="#" class="dropdown-item"  routerLink="/Academics/PrimaryWing">Primary Wing</a></li>
-                <li><a href="#" class="dropdown-item"  routerLink="/Academics/MiddleWing"> Middle Wing </a></li>
-                <li><a href="#" class="dropdown-item">Senior Wing</a></li>
+                <li><a href="#" class="dropdown-item" routerLink="/Academics/PrimaryWing">Primary Wing</a></li>
+                <li><a href="#" class="dropdown-item" routerLink="/Academics/MiddleWing"> Middle Wing </a></li>
+                <li><a href="#" class="dropdown-item" routerLink="/Academics/SeniorWing">Senior Wing</a></li>
               </ul>
             </li>
 
@@ -57,38 +57,54 @@
         </li>
         <!-- Infrastructure -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" id="InfrastructureDropdown" role="button"
-            data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle text-white" data-bs-auto-close="outside" id="academicsDropdown"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Infrastructure
           </a>
-          <ul class="dropdown-menu" aria-labelledby="InfrastructureDropdown">
-            <li><a class="dropdown-item">Auditorium</a></li>
-            <li><a class="dropdown-item" routerLink="/Infrastructure/SportFacilities">Sport Facilities</a></li>
-            <li><a class="dropdown-item" href="#">Auditorium</a></li>
-            <li><a class="dropdown-item" href="#">Sport Facilities</a></li>
-            <li><a class="dropdown-item" href="#">Facilities</a></li>
+          <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+            <!-- Nested Dropdown -->
 
-            
+            <li><a class="dropdown-item" href="#">Auditorium</a></li>
+            <li><a class="dropdown-item" routerLink="/Infrastructure/SportFacilities">Sport Facilities</a></li>
+            <li class="dropdown-submenu dropend">
+              <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                aria-expanded="false">Facilities</a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item" routerLink="/Academics/PrimaryWing">Transpotation</a></li>
+                <li><a href="#" class="dropdown-item" routerLink="/Academics/MiddleWing"> Health Clinic </a></li>
+                <li><a href="#" class="dropdown-item" routerLink="/Academics/SeniorWing">Security</a></li>
+              </ul>
+            </li>
+            <!-- Regular Dropdown Items -->
             <li><a class="dropdown-item" href="#">Learning Center</a></li>
             <li><a class="dropdown-item" href="#">Infrastructure</a></li>
-
             <li><a class="dropdown-item" href="#">Libarary</a></li>
           </ul>
         </li>
-
         <!-- Admissions -->
+
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" id="admissionsDropdown" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
+          <a class="nav-link dropdown-toggle text-white" data-bs-auto-close="outside" id="academicsDropdown"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Admissions
           </a>
-          <ul class="dropdown-menu" aria-labelledby="admissionsDropdown">
-            <li><a class="dropdown-item">Admission</a></li>
+          <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+            <!-- Nested Dropdown -->
+
+            <li class="dropdown-submenu dropend">
+              <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                aria-expanded="false">Admissions</a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item" routerLink="/Academics/PrimaryWing">Primary Wing</a></li>
+                <li><a href="#" class="dropdown-item" routerLink="/admissions/MiddleWing"> MiddleWing </a></li>
+                <li><a href="#" class="dropdown-item" routerLink="/Academics/SeniorWing">SeniorWing</a></li>
+              </ul>
+            </li>
+            <!-- Regular Dropdown Items -->
             <li><a class="dropdown-item" routerLink="/admissions/TCRequest">TC Request</a></li>
-            <li><a class="dropdown-item" routerLink="/admissions/MiddleWing">MiddleWing</a></li>
+
           </ul>
         </li>
-
         <!-- Press Coverage -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-white" id="pressDropdown" role="button" data-bs-toggle="dropdown"
@@ -107,7 +123,6 @@
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" routerLink="/Gallery">Gallery</a>
-
         </li>
       </ul>
     </div>

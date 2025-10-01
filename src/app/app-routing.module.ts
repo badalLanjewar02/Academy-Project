@@ -15,10 +15,14 @@ import { GuidanceCouncellingComponent } from './Academics/guidance-councelling/g
 import { PressCoverageComponent } from './Pess Coverage/press-coverage/press-coverage.component';
 import { EMagazineComponent } from './Pess Coverage/e-magazine/e-magazine.component';
 import { AuditoriumComponent } from './Infrastructure/auditorium/auditorium.component';
-import { MiddleWingComponent } from './Admissions/middle-wing/middle-wing.component';
+
 import { VacanciesComponent } from './vacancies/vacancies.component';
 import { TCRequestComponent } from './Admissions/tc-request/tc-request.component';
 import { SportFacilitiesComponent } from './Infrastructure/sport-facilities/sport-facilities.component';
+import { PrimaryWingComponent } from './Academics/Methodology/primary-wing/primary-wing.component';
+import { SeniorWingComponent } from './Academics/Methodology/senior-wing/senior-wing.component';
+import { MiddleWingComponent } from './Admissions/middle-wing/middle-wing.component';
+
 
 
 const routes: Routes = [
@@ -40,6 +44,9 @@ const routes: Routes = [
   {
     path: 'Academics',
     children: [
+      // { path: 'MiddleWing', component: MiddleWingComponent },
+      { path: 'PrimaryWing', component: PrimaryWingComponent },
+      { path: 'SeniorWing', component: SeniorWingComponent },
       { path: 'HolisticDevelopment', component: HolisticDevelopmentComponent },
       { path: 'TechnologyIntegration', component: TechnologyIntegrationComponent },
       { path: 'GuidanceCouncelling', component: GuidanceCouncellingComponent },

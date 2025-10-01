@@ -11,7 +11,7 @@ import { ChairpersonMessagesComponent } from './The-Academy/chairperson-messages
 import { PrincipalMessageComponent } from './The-Academy/principal-message/principal-message.component';
 import { AccreditationComponent } from './The-Academy/accreditation/accreditation.component';
 import { PrimaryWingComponent } from './Academics/Methodology/primary-wing/primary-wing.component';
-import { MiddleWingComponent } from './Academics/Methodology/middle-wing/middle-wing.component';
+
 import { SeniorWingComponent } from './Academics/Methodology/senior-wing/senior-wing.component';
 import { HolisticDevelopmentComponent } from './Academics/holistic-development/holistic-development.component';
 import { TechnologyIntegrationComponent } from './Academics/technology-integration/technology-integration.component';
@@ -39,7 +39,7 @@ import { VacanciesComponent } from './vacancies/vacancies.component';
     PrincipalMessageComponent,
     AccreditationComponent,
     PrimaryWingComponent,
-    MiddleWingComponent,
+    
     SeniorWingComponent,
     HolisticDevelopmentComponent,
     TechnologyIntegrationComponent,
