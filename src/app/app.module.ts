@@ -27,6 +27,9 @@ import { PressCoverageComponent } from './Pess Coverage/press-coverage/press-cov
 import { EMagazineComponent } from './Pess Coverage/e-magazine/e-magazine.component';
 import { HttpClientModule } from '@angular/common/http';
 import { VacanciesComponent } from './vacancies/vacancies.component';
+import { AdmissionprimaryWingComponent } from './Admissions/admissions/admissionprimary-wing/admissionprimary-wing.component';
+import { AdmissionmiddleWingComponent } from './Admissions/admissions/admissionmiddle-wing/admissionmiddle-wing.component';
+import { AdmissionseniorWingComponent } from './Admissions/admissions/admissionsenior-wing/admissionsenior-wing.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +55,10 @@ import { VacanciesComponent } from './vacancies/vacancies.component';
     GalleryComponent,
     PressCoverageComponent,
     EMagazineComponent,
-    VacanciesComponent
+    VacanciesComponent,
+    AdmissionprimaryWingComponent,
+    AdmissionmiddleWingComponent,
+    AdmissionseniorWingComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,17 @@
 .font-bold {
     font-weight: 700;
 }
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+.text-sky-700{
+    color: #0369a1;
+}
+.text-sky-800{
+    color: #075985;
+}
+
 .text-blue{
     color: rgb(29 78 216);
 }
@@ -38,4 +49,9 @@ p ,h1 ,h2,h3,h4,h5,h6{
 }
 .text-orange-700{
     color: #c2410c;
+}
+
+/* Academics  */
+.academics-bg{
+    background-color: #f0f9ff;
 }

@@ -21,7 +21,10 @@ import { TCRequestComponent } from './Admissions/tc-request/tc-request.component
 import { SportFacilitiesComponent } from './Infrastructure/sport-facilities/sport-facilities.component';
 import { PrimaryWingComponent } from './Academics/Methodology/primary-wing/primary-wing.component';
 import { SeniorWingComponent } from './Academics/Methodology/senior-wing/senior-wing.component';
-import { MiddleWingComponent } from './Admissions/middle-wing/middle-wing.component';
+
+import { AdmissionprimaryWingComponent } from './Admissions/admissions/admissionprimary-wing/admissionprimary-wing.component';
+import { AdmissionmiddleWingComponent } from './Admissions/admissions/admissionmiddle-wing/admissionmiddle-wing.component';
+import { AdmissionseniorWingComponent } from './Admissions/admissions/admissionsenior-wing/admissionsenior-wing.component';
 
 
 
@@ -71,8 +74,11 @@ const routes: Routes = [
   {
     path: 'admissions',
     children: [
+      {path:'Admissionprimary-wing', component:AdmissionprimaryWingComponent},
+      {path:'AdmissionmiddleWing-wing', component:AdmissionmiddleWingComponent},
+      {path:'Admissionsenior-wing', component:AdmissionseniorWingComponent},
       { path: 'TCRequest', component: TCRequestComponent },
-      { path: 'MiddleWing', component: MiddleWingComponent },
+      
     ]
   },
   {
