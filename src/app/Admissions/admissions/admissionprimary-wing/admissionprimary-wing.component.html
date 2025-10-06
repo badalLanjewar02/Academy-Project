@@ -1,121 +1,242 @@
-
-<app-navigation></app-navigation>
-
+<app-navigation> </app-navigation>
 <div class="container">
-    <div class="container mt-5">
-        <h2>Student Details Form</h2>
-        <form [formGroup]="primaryWing" (ngSubmit)="onSave()" >
-            <div class="row">
-                <div class="mb-3 col-4">
-                    <label for="stdName" class="form-label">Student First Name</label>
-                    <input type="text"
-                     class="form-control"
-                     id="stdName"
-                     placeholder="Enter First Name" 
-                     formControlName="stdName"
-                    >
-                </div>
-                <div class="mb-3 col-4">
-                    <label for="stdMName" class="form-label">Student Middle Name</label>
-                    <input type="text"
-                    class="form-control"
-                    id="stdMName"
-                    placeholder="Enter Middle Name"
-                    formControlName="stdMName">
-                </div>
-                <div class="mb-3 col-4">
-                    <label for="stdLName" class="form-label">Student Last Name</label>
-                    <input type="text"
-                     class="form-control" 
-                     id="stdLName" 
-                     placeholder="Enter Last Name"
-                     formControlName="stdLName"
-                      >
-                </div>
-            </div>
-            <!-- Admission Class Section -->
-            <div class="row">
-                <div class="mb-3 col-6">
-                    <!-- <label for="classSelect" class="form-label">Select Class</label> -->
-                    <!-- <select class="form-select" id="classSelect" required>
-                        <option value="">Choose Class</option>
-                        <option value="1">Class 1</option>
-                        <option value="2">Class 2</option>
-                        <option value="3">Class 3</option>
-                        <option value="4">Class 4</option>
-                        <option value="5">Class 5</option>
-                        <option value="6">Class 6</option>
-                        <option value="7">Class 7</option>
-                        <option value="8">Class 8</option>
-                        <option value="9">Class 9</option>
-                        <option value="10">Class 10</option>
-                    </select> -->
-                    <div class="mb-3 col-4">
-                    <label for="stdAdmisionC" class="form-label">Select Class</label>
-                    <input type="text"
-                     class="form-control" 
-                     id="stdAdmisionC" 
-                     placeholder="Enter Last Name"
-                     formControlName="stdAdmisionC"
-                      >
-                </div>
-                </div>
+    <div class="mx-5">
 
-                <!-- Student Aadhar Section -->
-                <div class="mb-3 col-6">
-                    <label for="stdAdharNo" class="form-label">Student Aadhar Number</label>
-                    <input type="text"
-                     class="form-control" 
-                     id="stdAdharNo"
-                     placeholder="Enter Aadhar Number"
-                     formControlName="stdAdharNo"
-                    >
+        <form action="">
+            <div class="academics-bg px-3 py-4 mb-5 px-3 py-4 rounded-5">
+                <h3 class="text-xl mb-3 text-sky-700 "> <i class="fa fa-user"></i>Student Details</h3>
+                <div class="d-flex gap-3 mb-3 ">
+                    <div class="col">
+                        <label for="stdName" class="form-label text-sky-800">Student First Name</label>
+                        <input type="text"
+                         class="form-control" 
+                         id="stdName">
+                    </div>
+                    <div class="col">
+                        <label for="stdName" class="form-label text-sky-800">Student First Name</label>
+                        <input type="text"
+                         class="form-control" 
+                         id="stdName">
+                    </div>
+                    <div class="col">
+                        <label for="stdName" class="form-label text-sky-800">Student First Name</label>
+                        <input type="text"
+                         class="form-control" 
+                         id="stdName">
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="mb-3 col-6 ">
-                    <label for="stdAdharDoc" class="form-label">Student Aadhar Document</label>
-                    <input type="file"
-                     class="form-control" 
-                     id="stdAdharDoc"
-                     accept=".pdf,.jpg,.jpeg,.png"
-                     formControlName="stdAdharDoc"
-                     required>
-                    <div class="form-text">No file chosen</div>
-                </div>
+                <div class="d-flex gap-3 mb-3">
+                    <div class="col-6">
+                        <label for="stdName" class="form-label">Student Aadhar Number</label>
+                        <input type="text" class="form-control" id="stdName">
+                    </div>
+                    <div class="col">
+                        <label for="stdName" class="form-label"><span><i class="fa-regular fa-file"></i></span>Student
+                            Aadhar Document</label>
+                        <input type="file" class="form-control" id="stdName">
+                    </div>
 
-                <!-- Student Birth Certificate Section -->
-                <div class="mb-3 col-6 ">
-                    <label for="stdBirthCer" class="form-label">Student Birth Certificate</label>
-                    <input type="file"
-                     class="form-control"
-                     id="stdBirthCer" 
-                     accept=".pdf,.jpg,.jpeg,.png"
-                     formControlName="stdBirthCer"
-                     required>
-                    <div class="form-text">No file chosen</div>
                 </div>
-            </div>
-            <!-- Student Passport Photo Section -->
-            <div class="row">
-                <div class="col-6">
-                    <div class="mb-3">
-                        <label for="stdPhoto" class="form-label">Student Passport Photo</label>
-                        <input type="file" 
-                        class="form-control"
-                         id="stdPhoto" 
-                         accept=".jpg,.jpeg,.png"
-                         formControlName="stdPhoto"
-                          required>
-                        <div class="form-text">No file chosen</div>
+                <div class="d-flex mb-3">
+                    <div class="col ">
+                        <label for="stdName" class="form-label text-sky-800"><span> <i
+                                    class="fa-regular fa-file"></i></span>Student Birth Certificate</label>
+                        <input type="file"
+                         class="form-control" 
+                         id="stdName">
+                    </div>
+                </div>
+                <div class="d-flex mb-3">
+                    <div class="col">
+                        <label for="stdName" class="form-label text-sky-800"><span><i
+                                    class="fa-solid fa-camera"></i></span> Student Passport Photo</label>
+                        <input type="file"
+                         class="form-control" 
+                         id="stdName">
+                    </div>
+                </div>
+                <div class="d-flex mb-3">
+                    <div class="col">
+                        <label for="stdName" class="form-label text-sky-800">Student Migration Document</label>
+                       <input type="file"
+                         class="form-control" 
+                         id="stdName">
                     </div>
                 </div>
             </div>
 
-            <!-- Submit Button -->
-            <button type="submit" class="btn btn-primary"  >Submit</button>
+            <!-- Father Details  -->
+            <div class="Father-detalis academics-bg px-3 py-4 mb-5">
+                <h3 class="text-xl mb-3 text-sky-700"> <span><i class="fa-solid fa-user-tie"></i></span> Father Details
+                </h3>
+                <div class="d-flex gap-3 mb-3">
+                    <div class="col">
+                        <label for="stdName" class="form-label text-sky-800">Father First Name</label>
+                      <input type="text"
+                         class="form-control" 
+                         id="stdName">
+                    </div>
+                    <div class="col">
+                        <label for="stdName" class="form-label text-sky-800">Father Middle Name</label>
+                        <input type="text"
+                         class="form-control" 
+                         id="stdName">
+                    </div>
+                    <div class="col">
+                        <label for="stdName" class="form-label text-sky-800">Father Last Name</label>
+                        <input type="text"
+                         class="form-control" 
+                         id="stdName">
+                    </div>
+                </div>
+                <div class="d-flex mb-3">
+                    <div class="col">
+                        <label for="stdName" class="form-label text-sky-800">Father Aadhar Document</label>
+                        <input type="text"
+                         class="form-control" 
+                         id="stdName">
+                    </div>
+                </div>
+                <div class="d-flex mb-3">
+                    <div class="col">
+                        <label for="stdName" class="form-label text-sky-800"> <span><i
+                                    class="fa-solid fa-camera"></i></span> Father Passport Photo</label>
+                      <input type="text"
+                         class="form-control" 
+                         id="stdName">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mother Details  -->
+            <div class="Father-detalis academics-bg px-3 py-4 mb-5">
+                <h3 class="text-xl mb-3 text-sky-700">Mother Details</h3>
+                <div class="d-flex gap-3 mb-3">
+                    <div class="col">
+                        <label for="stdName" class="form-label text-sky-800">Mother First Name</label>
+                       <input type="text"
+                         class="form-control" 
+                         id="stdName">
+                    </div>
+                    <div class="col">
+                        <label for="stdName" class="form-label text-sky-800">Mother Middle Name</label>
+                      <input type="text"
+                         class="form-control" 
+                         id="stdName">
+                    </div>
+                    <div class="col">
+                        <label for="stdName" class="form-label text-sky-800">Mother Last Name</label>
+                      <input type="text"
+                         class="form-control" 
+                         id="stdName">
+                    </div>
+                </div>
+                <div class="d-flex mb-3">
+                    <div class="col">
+                        <label for="stdName" class="form-label text-sky-800"><span><i
+                                    class="fa-regular fa-file"></i></span>Mother Aadhar Document</label>
+                        <input type="file"
+                         class="form-control" 
+                         id="stdName">
+                    </div>
+                </div>
+                <div class="d-flex mb-3">
+                    <div class="col">
+                        <label for="stdName" class="form-label text-sky-800"> <span><i
+                                    class="fa-solid fa-camera"></i></span> Mother Passport Photo</label>
+                      <input type="file"
+                         class="form-control" 
+                         id="stdName">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Details -->
+            <div class="Academic-detalis academics-bg px-3 py-4 mb-5">
+                <h3 class="text-xl mb-3 text-sky-700">Additional Details</h3>
+                <div class="d-flex gap-3 mb-3">
+
+                    <div class="col">
+                        <label for="stdName" class="form-label text-sky-800">Domicile Certificate</label>
+                         <input type="file"
+                         class="form-control" 
+                         id="stdName">
+                    </div>
+                    <div class="col">
+                        <label for="stdName" class="form-label text-sky-800">ABC Card</label>
+                        <input type="file"
+                         class="form-control" 
+                         id="stdName">
+                    </div>
+                </div>
+                <div class="d-flex gap-3 mb-3">
+
+                    <div class="col">
+                        <label for="stdName" class="form-label text-sky-800">ABC Id</label>
+                         <input type="text"
+                         class="form-control" 
+                         id="stdName">
+                    </div>
+                    <div class="col">
+                        <label for="stdName" class="form-label text-sky-800">Contact Number</label>
+                       <input type="text"
+                         class="form-control" 
+                         id="stdName">
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <!-- Academic Details -->
+            <div class="Academic-detalis academics-bg px-3 py-4 mb-5">
+                <h3 class="text-xl mb-3 text-sky-700">Academic Details</h3>
+                <div class="d-flex gap-3 mb-3">
+
+                    <div class="col">
+                        <label for="stdName" class="form-label text-sky-800">Academic Class</label>
+                       <input type="text"
+                         class="form-control" 
+                         id="stdName">
+                    </div>
+                    <div class="col">
+                        <label for="stdName" class="form-label text-sky-800">Academic Certificate</label>
+                   <input type="file"
+                         class="form-control" 
+                         id="stdName">
+                    </div>
+                </div>
+                <div class="d-flex mb-3">
+                    <div class="col">
+                        <label for="stdName" class="form-label text-sky-800">Previous Marksheet</label>
+                     <input type="file"
+                         class="form-control" 
+                         id="stdName">
+                    </div>
+                    <div class="col"></div>
+                </div>
+
+                <label class="form-label me-3">Any Government Scholarship applicable:</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="govtScholarship" id="scholarshipYes" value="yes">
+                    <label class="form-check-label" for="scholarshipYes">Yes</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="govtScholarship" id="scholarshipNo" value="no"
+                        checked>
+                    <label class="form-check-label" for="scholarshipNo">No</label>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-end mb-5">
+                <button type="submit" class="btn btn-primary"> <span><i class="fa-regular fa-cloud"></i></span>Submit
+                    Application</button>
+            </div>
+
         </form>
     </div>
 </div>
+<app-footer> </app-footer>
 
-<app-footer></app-footer>
