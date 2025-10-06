@@ -27,6 +27,9 @@
 .nav-link-color{
     color: #e0f2fe;
 }
+.bg-sky-800{
+    background-color: #e0f2fe;
+}
 .heading-secondory{
     color: #4b5563;
 }
@@ -54,4 +57,13 @@ p ,h1 ,h2,h3,h4,h5,h6{
 /* Academics  */
 .academics-bg{
     background-color: #f0f9ff;
+}
+
+.text-gray-700 {
+    color: #374151;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
 }

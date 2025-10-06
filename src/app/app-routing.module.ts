@@ -68,6 +68,9 @@ const routes: Routes = [
     path: 'Infrastructure',
     children: [
       { path: 'SportFacilities', component: SportFacilitiesComponent },
+      {
+        path: 'Auditorium', component: AuditoriumComponent
+      },
     ]
   },
 
@@ -81,9 +84,7 @@ const routes: Routes = [
       
     ]
   },
-  {
-    path: 'Auditorium', component: AuditoriumComponent
-  },
+ 
   { path: 'Vacancies', component: VacanciesComponent },
     
   { path: 'Gallery', component: GalleryComponent },

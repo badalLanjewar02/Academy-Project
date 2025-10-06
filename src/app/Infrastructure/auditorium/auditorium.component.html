@@ -1,116 +1,126 @@
+<app-navigation></app-navigation>
 <div class="container">
-    <div class="container mt-5">
-        <h2>Student Details Form</h2>
-        <form [formGroup]="primaryWing" (ngSubmit)="onSave()" >
-            <div class="row">
-                <div class="mb-3 col-4">
-                    <label for="stdName" class="form-label">Student First Name</label>
-                    <input type="text"
-                     class="form-control"
-                     id="stdName"
-                     placeholder="Enter First Name" 
-                     formControlName="stdName"
-                    >
-                </div>
-                <div class="mb-3 col-4">
-                    <label for="stdMName" class="form-label">Student Middle Name</label>
-                    <input type="text"
-                    class="form-control"
-                    id="stdMName"
-                    placeholder="Enter Middle Name"
-                    formControlName="stdMName">
-                </div>
-                <div class="mb-3 col-4">
-                    <label for="stdLName" class="form-label">Student Last Name</label>
-                    <input type="text"
-                     class="form-control" 
-                     id="stdLName" 
-                     placeholder="Enter Last Name"
-                     formControlName="stdLName"
-                      >
-                </div>
-            </div>
-            <!-- Admission Class Section -->
-            <div class="row">
-                <div class="mb-3 col-6">
-                    <!-- <label for="classSelect" class="form-label">Select Class</label> -->
-                    <!-- <select class="form-select" id="classSelect" required>
-                        <option value="">Choose Class</option>
-                        <option value="1">Class 1</option>
-                        <option value="2">Class 2</option>
-                        <option value="3">Class 3</option>
-                        <option value="4">Class 4</option>
-                        <option value="5">Class 5</option>
-                        <option value="6">Class 6</option>
-                        <option value="7">Class 7</option>
-                        <option value="8">Class 8</option>
-                        <option value="9">Class 9</option>
-                        <option value="10">Class 10</option>
-                    </select> -->
-                    <div class="mb-3 col-4">
-                    <label for="stdAdmisionC" class="form-label">Select Class</label>
-                    <input type="text"
-                     class="form-control" 
-                     id="stdAdmisionC" 
-                     placeholder="Enter Last Name"
-                     formControlName="stdAdmisionC"
-                      >
-                </div>
-                </div>
+    <h2 class="text-center mb-3"> State-of-the-Art 
+        <span class="text-blue">Auditorium</span>
+    </h2>
+    <p class="para-size text-gray-700 text-center mb-4">A perfect venue for performances, events, and assemblies</p>
 
-                <!-- Student Aadhar Section -->
-                <div class="mb-3 col-6">
-                    <label for="stdAdharNo" class="form-label">Student Aadhar Number</label>
-                    <input type="text"
-                     class="form-control" 
-                     id="stdAdharNo"
-                     placeholder="Enter Aadhar Number"
-                     formControlName="stdAdharNo"
-                    >
-                </div>
+    <div class="shadow-sm p-4 mb-5 bg-body rounded">
+        <h3 class="py-3">World-Class Facilities</h3>
+        <p class="py-2">Our auditorium is designed to provide the perfect environment for performances, presentations, and gatherings. With state-of-the-art technology and thoughtful design, it offers an exceptional experience for both performers and audience members.</p>
+        <div class="d-flex gap-3">
+            <div class="col-4 border rounded p-3 mb-3 ">
+                <ul class="">
+                    <h4 class="mb-4"><i class="fa-solid fa-bullseye"></i>Spacious Design</h4>
+                    <li>Sprawling playground with modern infrastructure</li>
+                    <li>Special areas earmarked for different games</li>
+                    <li>Outdoor courts for basketball, and badminton</li>
+                </ul>
             </div>
-            <div class="row">
-                <div class="mb-3 col-6 ">
-                    <label for="stdAdharDoc" class="form-label">Student Aadhar Document</label>
-                    <input type="file"
-                     class="form-control" 
-                     id="stdAdharDoc"
-                     accept=".pdf,.jpg,.jpeg,.png"
-                     formControlName="stdAdharDoc"
-                     required>
-                    <div class="form-text">No file chosen</div>
-                </div>
-
-                <!-- Student Birth Certificate Section -->
-                <div class="mb-3 col-6 ">
-                    <label for="stdBirthCer" class="form-label">Student Birth Certificate</label>
-                    <input type="file"
-                     class="form-control"
-                     id="stdBirthCer" 
-                     accept=".pdf,.jpg,.jpeg,.png"
-                     formControlName="stdBirthCer"
-                     required>
-                    <div class="form-text">No file chosen</div>
-                </div>
-            </div>
-            <!-- Student Passport Photo Section -->
-            <div class="row">
-                <div class="col-6">
-                    <div class="mb-3">
-                        <label for="stdPhoto" class="form-label">Student Passport Photo</label>
-                        <input type="file" 
-                        class="form-control"
-                         id="stdPhoto" 
-                         accept=".jpg,.jpeg,.png"
-                         formControlName="stdPhoto"
-                          required>
-                        <div class="form-text">No file chosen</div>
+            <div class="col-4 border rounded p-3 mb-3 ">
+                <div class=""></div>
+                <ul>
+                    <h4 class="mb-4">Sound-Proof Environment</h4>
+                    <p>Facilities for various sports including:</p>
+                    <div class="d-flex justify-content-around gap-5">
+                        <div class="lh-lg" >
+                            <li>Cricket</li>
+                            <li>Football</li>
+                            <li>Taekwondo</li>
+                            <li>Badminton</li>
+                        </div>
+                        <div  class="lh-lg">
+                            <li>Basketball</li>
+                            <li>Chess</li>
+                            <li>Kabaddi</li>
+                            <li>Volleyball</li>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <!-- Submit Button -->
-            <button type="submit" class="btn btn-primary"  >Submit</button>
-        </form>
+                </ul>
+
+            </div>
+            <div class="col-4 border rounded p-3 mb-3 ">
+                <ul>
+                    <h4 class="mb-4">High-Tech Systems</h4>
+                    <li>Professional coaches with extensive experience</li>
+                    <li>Regular fitness assessments and improvement plans</li>
+                    <li>Focus on technique, strategy, and sportsmanship</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="Competitive-Excellence  shadow-sm p-4 mb-5 bg-body rounded ">
+        <h3>Comprehensive Sports Program</h3>
+        <div class="d-flex bg ">
+            <div class="col-6">
+                <h5 class="py-3">Sports Achievement Program</h5>
+                <p>Our students regularly participate in competitions at the district, state, national, and
+                    international levels, bringing laurels to the school and developing their competitive spirit.</p>
+                <ul class="lh-lg">
+                    <li>
+                        <p>Students participate in national and international tournaments</p>
+                    </li>
+                    <li>
+                        <p>Regular inter-house and inter-school competitions</p>
+                    </li>
+                    <li>
+                        <p>Sports scholarships for exceptional athletes</p>
+                    </li>
+                    <li>
+                        <p>Special training camps during vacations</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 bg-sky-800">
+                <h5 class="py-3">Annual Sports Events</h5>
+                <ul class="lh-lg">
+                    <li>
+                        <h6 class="t-color">Junior Sports Day</h6>
+                        <p class="p-text">Celebrated annually for students in grades 1-5</p>
+                    </li>
+                    <li>
+                        <h6 class="t-color">Senior Sports Day</h6>
+                        <p class="p-text">Celebrated annually for students in grades 6-12</p>
+                    </li>
+                    <li>
+                        <h6 class="t-color">Inter-School Sports Tournament</h6>
+                        <p class="p-text">Annual competition hosting schools from the region</p>
+                    </li>
+                    <li>
+                        <h6 class="t-color">Sports Achievement Ceremony</h6>
+                        <p class="p-text">Recognition of outstanding athletes and teams</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="Benefits">
+
+    </div>
+    <div class="Our-Educational bg  rounded p-4 mb-3">
+        <h4 class="mb-2 text-orange-700"> <i class="fa-solid fa-camera "></i>Benefits of Our Sports Program</h4>
+        <p class="mb-4 text-orange-800">Our comprehensive sports program goes beyond physical fitness to develop
+            character, resilience, and important life skills. Students learn teamwork, leadership, and discipline
+            through regular participation in sports activities.</p>
+        <div class="row">
+            <div class="col-3">
+                <img src="../../../assets/Academics/Holistic Development/Holistic Development 1.jpg" alt=""
+                    class=" image-fluid w-100 rounded">
+            </div>
+            <div class="col-3">
+                <img src="../../../assets/Academics/Holistic Development/Holistic Development 2.jpg" alt=""
+                    class=" image-fluid w-100 rounded">
+            </div>
+            <div class="col-3">
+                <img src="../../../assets/Academics/Holistic Development/Holistic Development 3.jpg" alt=""
+                    class=" image-fluid w-100 rounded">
+            </div>
+            <div class="col-3">
+                <img src="../../../assets/Academics/Holistic Development/Holistic Development 4.jpg" alt=""
+                    class=" image-fluid w-100 rounded">
+            </div>
+        </div>
     </div>
 </div>
+<app-footer></app-footer>

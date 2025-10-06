@@ -3,33 +3,42 @@
 <div class="container">
     <div class="mx-5">
 
-        <form action="">
+<form [formGroup]="middleWingForm" (ngSubmit)="onSubmit()">
             <div class="academics-bg px-3 py-4 mb-5 px-3 py-4 rounded-5">
                 <h3 class="text-xl mb-3 text-sky-700 "> <i class="fa fa-user"></i>Student Details</h3>
                 <div class="d-flex gap-3 mb-3 ">
                     <div class="col">
-                        <label for="stdName" class="form-label text-sky-800">Student First Name</label>
+                        <label for="sName" class="form-label text-sky-800">Student First Name</label>
                         <input type="text"
                          class="form-control" 
-                         id="stdName">
+                         id="sName"
+                        formControlName="sName">
                     </div>
                     <div class="col">
-                        <label for="stdName" class="form-label text-sky-800">Student First Name</label>
+                        <label for="sMName" class="form-label text-sky-800">Student Middle Name</label>
                         <input type="text"
                          class="form-control" 
-                         id="stdName">
+                         id="sMName"
+                         formControlName="sMName"
+                         >
                     </div>
                     <div class="col">
-                        <label for="stdName" class="form-label text-sky-800">Student First Name</label>
+                        <label for="lName" class="form-label text-sky-800">Student Last Name</label>
                         <input type="text"
                          class="form-control" 
-                         id="stdName">
+                         id="lName"
+                         formControlName="lName"
+                         >
                     </div>
                 </div>
                 <div class="d-flex gap-3 mb-3">
                     <div class="col-6">
-                        <label for="stdName" class="form-label">Student Aadhar Number</label>
-                        <input type="text" class="form-control" id="stdName">
+                        <label for="adharNO" class="form-label">Student Aadhar Number</label>
+                        <input type="text"
+                         class="form-control"
+                          id="adharNO"
+                          formControlName="adharNO"
+                          >
                     </div>
                     <div class="col">
                         <label for="stdName" class="form-label"><span><i class="fa-regular fa-file"></i></span>Student
@@ -75,19 +84,24 @@
                         <label for="stdName" class="form-label text-sky-800">Father First Name</label>
                       <input type="text"
                          class="form-control" 
-                         id="stdName">
+                         id="stdName"
+                         formControlName="fsName"
+                         >
                     </div>
                     <div class="col">
                         <label for="stdName" class="form-label text-sky-800">Father Middle Name</label>
                         <input type="text"
                          class="form-control" 
-                         id="stdName">
+                         id="stdName"
+                         formControlName="fmName"
+                         >
                     </div>
                     <div class="col">
                         <label for="stdName" class="form-label text-sky-800">Father Last Name</label>
                         <input type="text"
                          class="form-control" 
-                         id="stdName">
+                         id="stdName"
+                         formControlName="flName">
                     </div>
                 </div>
                 <div class="d-flex mb-3">
@@ -117,19 +131,23 @@
                         <label for="stdName" class="form-label text-sky-800">Mother First Name</label>
                        <input type="text"
                          class="form-control" 
-                         id="stdName">
+                         id="stdName"
+                         formControlName="msName"
+                         >
                     </div>
                     <div class="col">
                         <label for="stdName" class="form-label text-sky-800">Mother Middle Name</label>
                       <input type="text"
                          class="form-control" 
-                         id="stdName">
+                         id="stdName"
+                         formControlName="mmName">
                     </div>
                     <div class="col">
                         <label for="stdName" class="form-label text-sky-800">Mother Last Name</label>
                       <input type="text"
                          class="form-control" 
-                         id="stdName">
+                         id="stdName"
+                         formArrayName="mlName">
                     </div>
                 </div>
                 <div class="d-flex mb-3">
@@ -176,13 +194,17 @@
                         <label for="stdName" class="form-label text-sky-800">ABC Id</label>
                          <input type="text"
                          class="form-control" 
-                         id="stdName">
+                         id="stdName"
+                         formControlName="abcId"
+                         >
                     </div>
                     <div class="col">
                         <label for="stdName" class="form-label text-sky-800">Contact Number</label>
                        <input type="text"
                          class="form-control" 
-                         id="stdName">
+                         id="stdName"
+                         formControlName="contactNo"
+                         >
                     </div>
                 </div>
 
@@ -199,7 +221,9 @@
                         <label for="stdName" class="form-label text-sky-800">Academic Class</label>
                        <input type="text"
                          class="form-control" 
-                         id="stdName">
+                         id="stdName"
+                         formControlName="academicClass"
+                         >
                     </div>
                     <div class="col">
                         <label for="stdName" class="form-label text-sky-800">Academic Certificate</label>
