@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { error } from 'console';
 import { MiddleWingServiceService } from 'src/app/Services/middle-wing-service.service';
 
 @Component({
@@ -8,33 +9,42 @@ import { MiddleWingServiceService } from 'src/app/Services/middle-wing-service.s
   styleUrls: ['./admissionsenior-wing.component.css']
 })
 export class AdmissionseniorWingComponent implements OnInit {
-middleWingForm!: FormGroup;
 
-  constructor(private middleWingService: MiddleWingServiceService) {}
+  selectedFile: File | null = null;
+  formValues: any = {};
+  constructor(private service: MiddleWingServiceService) { }
 
-   ngOnInit(): void {
+  seniorWingForm = new FormGroup({
 
-    this.middleWingForm = new FormGroup({
-      sName: new FormControl('')
-    });
+    id: new FormControl(''),
+    ssName: new FormControl(''),
+    ssMName: new FormControl(''),
+    ssLName: new FormControl(''),
+    ssAdharno: new FormControl(''),
+    stdAdharDoc: new FormControl(''),
+  })
+
+  ngOnInit(): void {
+
   }
 
-    onSubmit(): void {
-    const formData = this.middleWingForm.value; // { sName: "Badal" }
+ onFileChange(event: any) { }
+ 
+ onSubmit() {
+  this.service.addSeniorWingData(this.seniorWingForm.value).subscri be(
+    (res) => {
+      alert('Data Saved Successfully');
+      this.seniorWingForm.reset();
+    },
+    (error) => {
+      alert('Error while saving the data');
+    }
+  );
+  
+}
 
-    console.log('Sending data:', formData);
 
-    this.middleWingService.addMiddleWing(formData).subscribe({
-      next: (res) => {
-        console.log('Saved successfully:', res);
-        alert('Data saved successfully!');
-        this.middleWingForm.reset();
-      },
-      error: (err) => {
-        console.error('Error saving data:', err);
-        alert('Failed to save data.');
-      }
-    });
-  }
+
 
 }
+

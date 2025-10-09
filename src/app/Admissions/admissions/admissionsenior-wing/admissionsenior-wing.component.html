@@ -2,38 +2,48 @@
 <div class="container">
     <div class="mx-5">
 
-        <form action="">
+        <form [formGroup]="seniorWingForm" (ngSubmit)="onSubmit()">
             <div class="academics-bg px-3 py-4 mb-5 px-3 py-4 rounded-5">
                 <h3 class="text-xl mb-3 text-sky-700 "> <i class="fa fa-user"></i>Student Details</h3>
                 <div class="d-flex gap-3 mb-3 ">
                     <div class="col">
-                        <label for="stdName" class="form-label text-sky-800">Student First Name</label>
+                        <label for="ssName" class="form-label text-sky-800">Student First Name</label>
                         <input type="text"
-                         class="form-control" 
-                         id="stdName">
+                         class="form-control"
+                         formControlName="ssName" 
+                         id="ssName">
                     </div>
                     <div class="col">
-                        <label for="stdName" class="form-label text-sky-800">Student First Name</label>
+                        <label for="ssMName" class="form-label text-sky-800">Student Middle Name</label>
                         <input type="text"
                          class="form-control" 
-                         id="stdName">
+                         formControlName="ssMName"
+                         id="ssMName">
                     </div>
                     <div class="col">
-                        <label for="stdName" class="form-label text-sky-800">Student First Name</label>
+                        <label for="ssLName" class="form-label text-sky-800">Student Last Name</label>
                         <input type="text"
                          class="form-control" 
-                         id="stdName">
+                         formControlName="ssLName"
+                         id="ssLName">
                     </div>
                 </div>
                 <div class="d-flex gap-3 mb-3">
                     <div class="col-6">
-                        <label for="stdName" class="form-label">Student Aadhar Number</label>
-                        <input type="text" class="form-control" id="stdName">
+                        <label for="ssAdharno" class="form-label">Student Aadhar Number</label>
+                        <input type="text"
+                         class="form-control" 
+                         formControlName="ssAdharno"
+                        id="ssAdharno">
                     </div>
                     <div class="col">
-                        <label for="stdName" class="form-label"><span><i class="fa-regular fa-file"></i></span>Student
+                        <label for="stdAdharDoc" class="form-label"><span><i class="fa-regular fa-file"></i></span>Student
                             Aadhar Document</label>
-                        <input type="file" class="form-control" id="stdName">
+                        <input type="file"
+                         class="form-control"
+                         formControlName="stdAdharDoc"
+                         (change)="onFileChange($event)"
+                          id="stdAdharDoc">
                     </div>
 
                 </div>

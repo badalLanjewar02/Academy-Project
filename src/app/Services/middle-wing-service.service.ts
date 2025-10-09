@@ -14,4 +14,9 @@ export class MiddleWingServiceService {
   addMiddleWing(data: any): Observable<any> {
     return this.http.post(`${this.baseUrl}/addData`, data);
   }
+
+  addSeniorWingData(data: any): Observable<any> {
+    return this.http.post(`${this.baseUrl}/senior-wing/addDataSeniour`, data);
+  }
+
 }
